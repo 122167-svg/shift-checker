@@ -1,0 +1,5 @@
+{
+  "name": "Shift Checker",
+  "description": "An application for students to check their assigned shifts for the Shogi Salon and Warabi Mochi events. Users can select their name to see a consolidated schedule and their total work hours.",
+  "requestFramePermissions": []
+}
