@@ -2,7 +2,7 @@ import React, { useState, useMemo } from 'react';
 import type { Shift } from './types.ts';
 import { SHIFTS, NAMES, SHOGI_NOTES, WARABI_NOTES } from './constants.ts';
 
-// --- ShiftCard Component ---
+// --- ShiftCard Component (Inlined) ---
 interface ShiftCardProps {
   shift: Shift;
 }
@@ -61,7 +61,7 @@ const ShiftCard: React.FC<ShiftCardProps> = ({ shift }) => {
   );
 };
 
-// --- Notes Component ---
+// --- Notes Component (Inlined) ---
 interface NotesProps {
   shogiNotes: string[];
   warabiNotes: string[];
@@ -212,7 +212,6 @@ function App() {
                 </div>
               )}
             </div>
-          )}
         </div>
 
         <Notes shogiNotes={SHOGI_NOTES} warabiNotes={WARABI_NOTES} />
