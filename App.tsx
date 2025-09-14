@@ -161,7 +161,7 @@ function App() {
           {!selectedPerson ? (
             <div>
               <label htmlFor="person-search" className="block text-sm font-medium text-slate-700 mb-2">
-                名前を検索してください
+                担当者名で検索
               </label>
               <input
                 type="text"
@@ -189,14 +189,14 @@ function App() {
                 <div>
                   <h2 className="text-xl sm:text-2xl font-semibold">{selectedPerson} さんのシフト</h2>
                   <p className="mt-1 text-lg">
-                    総シフト時間: <span className="font-bold">{totalHours}</span> 時間
+                    合計勤務時間: <span className="font-bold">{totalHours}</span> 時間
                   </p>
                 </div>
                 <button
                   onClick={clearSelection}
                   className="px-4 py-2 text-sm font-medium text-indigo-600 bg-white border border-indigo-200 rounded-md hover:bg-indigo-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
                 >
-                  変更
+                  担当者を変更
                 </button>
               </div>
 
@@ -208,10 +208,11 @@ function App() {
                 </div>
               ) : (
                 <div className="text-center py-8 text-slate-500">
-                  <p>シフトは見つかりませんでした。</p>
+                  <p>割り当てられたシフトはありません。</p>
                 </div>
               )}
             </div>
+          )}
         </div>
 
         <Notes shogiNotes={SHOGI_NOTES} warabiNotes={WARABI_NOTES} />
