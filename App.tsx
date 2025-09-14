@@ -1,8 +1,8 @@
 import React, { useState, useMemo } from 'react';
-import type { Shift } from './types';
-import { SHIFTS, NAMES, SHOGI_NOTES, WARABI_NOTES } from './constants';
-import ShiftCard from './components/ShiftCard';
-import Notes from './components/Notes';
+import type { Shift } from './types.ts';
+import { SHIFTS, NAMES, SHOGI_NOTES, WARABI_NOTES } from './constants.ts';
+import ShiftCard from './components/ShiftCard.tsx';
+import Notes from './components/Notes.tsx';
 
 function App() {
   const [selectedPerson, setSelectedPerson] = useState<string>('');

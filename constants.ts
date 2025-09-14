@@ -1,4 +1,4 @@
-import type { Shift } from './types';
+import type { Shift } from './types.ts';
 
 export const SHIFTS: Shift[] = [
   // --- 将棋サロン (Shogi Salon) ---
